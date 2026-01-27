@@ -12,7 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blue[200]
+        backgroundColor: Colors.deepPurple[200],
+        body: Center(
+          child: Container(
+            height: 300,
+            width: 300,
+            color: Colors.blue[500],
+            child: Text("Arom Barom"),
+          )
+        )
       )
     ); // MaterialApp
   }
