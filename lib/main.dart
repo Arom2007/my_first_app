@@ -47,33 +47,26 @@ class MyApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // 1st box
-            Container(
-              height: 300,
-              width: 300,
-              color: Colors.deepPurple[600],
+            Expanded(
+              child: Container(
+                  color: Colors.deepPurple[600]
+              ),
             ),
 
             // 2nd box
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.deepPurple[400],
+            Expanded(
+              flex: 4, // Flex is the ratio of this widget compared the other widgets
+              // Here this widget will be 4x bigger than the rest of the widgets
+              child: Container(
+                  color: Colors.deepPurple[400]
+              ),
             ),
 
             // 3rd box
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.deepPurple[200]
-            ),
-
-            // 4th box without height becomes long if used expanded
             Expanded(
-              // Width becomes 100 and height becomes until end of the screen
-                child: Container(
-                  width: 100,
-                  color: Colors.deepPurple[100],
-                )
+              child: Container(
+                color: Colors.deepPurple[200]
+              ),
             )
           ]
         )
