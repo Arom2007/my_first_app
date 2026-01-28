@@ -35,38 +35,53 @@ class MyApp extends StatelessWidget {
           ]
 
         ),
-        body: Column(
-          // Displays things vertically
-          mainAxisAlignment: MainAxisAlignment.center,
-          // mainAxisAlignment: MainAxisAlignment.end,
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          // mainAxisAlignment: MainAxisAlignment.spaceAround,
-          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          // crossAxisAlignment: CrossAxisAlignment.start,
-          // crossAxisAlignment: CrossAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        body: ListView(
+          // A major problem with Column or Row is that sometimes the widgets don't fit into the screen and create overflow error in display
+          // To fix that, there is ListView which makes the widget fit into the screen by making it scrollable
+
+          // Columns display things vertically
+            // mainAxisAlignment: MainAxisAlignment.center,
+            // mainAxisAlignment: MainAxisAlignment.end,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // crossAxisAlignment: CrossAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.end,
+            // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // 1st box
-            Expanded(
-              child: Container(
-                  color: Colors.deepPurple[600]
-              ),
+            // // 1st box
+            // Expanded(
+            //   child: Container(
+            //       color: Colors.deepPurple[600]
+            //   ),
+            // ),
+            //
+            // // 2nd box
+            // Expanded(
+            //   flex: 4, // Flex is the ratio of this widget compared the other widgets
+            //   // Here this widget will be 4x bigger than the rest of the widgets
+            //   child: Container(
+            //       color: Colors.deepPurple[400]
+            //   ),
+            // ),
+            //
+            // // 3rd box
+            // Expanded(
+            //   child: Container(
+            //     color: Colors.deepPurple[200]
+            //   ),
+            // )
+            Container(
+              height: 350,
+              color: Colors.deepPurple[800]
             ),
-
-            // 2nd box
-            Expanded(
-              flex: 4, // Flex is the ratio of this widget compared the other widgets
-              // Here this widget will be 4x bigger than the rest of the widgets
-              child: Container(
-                  color: Colors.deepPurple[400]
-              ),
+            Container(
+              height: 350,
+              color: Colors.deepPurple[600],
             ),
-
-            // 3rd box
-            Expanded(
-              child: Container(
-                color: Colors.deepPurple[200]
-              ),
+            Container(
+              height: 350,
+              color: Colors.deepPurple[400],
             )
           ]
         )
