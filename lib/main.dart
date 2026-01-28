@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
           title: Text(
               "Arom Barom App Bar",
               style: TextStyle(
-                color: Colors.white
+                color: Colors.white,
+                fontSize: 25
               )
           ),
           backgroundColor: Colors.deepPurple,
@@ -49,21 +50,30 @@ class MyApp extends StatelessWidget {
             Container(
               height: 300,
               width: 300,
-              color: Colors.deepPurple[400],
+              color: Colors.deepPurple[600],
             ),
 
             // 2nd box
             Container(
               height: 200,
               width: 200,
-              color: Colors.deepPurple[200],
+              color: Colors.deepPurple[400],
             ),
 
             // 3rd box
             Container(
               height: 100,
               width: 100,
-              color: Colors.deepPurple[100]
+              color: Colors.deepPurple[200]
+            ),
+
+            // 4th box without height becomes long if used expanded
+            Expanded(
+              // Width becomes 100 and height becomes until end of the screen
+                child: Container(
+                  width: 100,
+                  color: Colors.deepPurple[100],
+                )
             )
           ]
         )
