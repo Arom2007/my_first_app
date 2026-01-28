@@ -36,24 +36,26 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           // Displays things vertically
-          // mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           // mainAxisAlignment: MainAxisAlignment.end,
           // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           // mainAxisAlignment: MainAxisAlignment.spaceAround,
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
+          // crossAxisAlignment: CrossAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // 1st box
             Container(
-              height: 100,
-              width: 100,
+              height: 300,
+              width: 300,
               color: Colors.deepPurple[400],
             ),
 
             // 2nd box
             Container(
-              height: 100,
-              width: 100,
+              height: 200,
+              width: 200,
               color: Colors.deepPurple[200],
             ),
 
