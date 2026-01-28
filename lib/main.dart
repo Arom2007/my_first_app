@@ -13,12 +13,50 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.deepPurple[200],
+        appBar: AppBar(
+          title: Text(
+              "Arom Barom App Bar",
+              style: TextStyle(
+                color: Colors.white
+              )
+
+          ),
+          backgroundColor: Colors.deepPurple,
+          elevation: 0, // no shadow to app bar
+          leading: Icon(Icons.menu, color: Colors.white),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                  Icons.logout,
+                  color: Colors.white
+              ),
+            ),
+          ]
+
+        ),
         body: Center(
           child: Container(
             height: 300,
             width: 300,
-            color: Colors.blue[500],
-            child: Text("Arom Barom"),
+            decoration: BoxDecoration(
+              color: Colors.deepPurple[500],
+              borderRadius: BorderRadius.circular(20),
+            ),
+            padding: EdgeInsets.all(25),
+            // child: Text(
+            //     "Arom Barom",
+            //   style:TextStyle(
+            //     color: Colors.white,
+            //     fontSize: 28,
+            //     fontWeight: FontWeight.bold
+            //   ),
+            // ),
+            child: Icon(
+              Icons.favorite,
+              color: Colors.white,
+              size: 40,
+            )
           )
         )
       )
