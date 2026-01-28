@@ -38,6 +38,8 @@ class MyApp extends StatelessWidget {
         body: ListView(
           // A major problem with Column or Row is that sometimes the widgets don't fit into the screen and create overflow error in display
           // To fix that, there is ListView which makes the widget fit into the screen by making it scrollable
+          // Scroll direction is set to vertical by default but you can change it
+          scrollDirection: Axis.horizontal,
 
           // Columns display things vertically
             // mainAxisAlignment: MainAxisAlignment.center,
@@ -72,15 +74,15 @@ class MyApp extends StatelessWidget {
             //   ),
             // )
             Container(
-              height: 350,
+              width: 350,
               color: Colors.deepPurple[800]
             ),
             Container(
-              height: 350,
+              width: 350,
               color: Colors.deepPurple[600],
             ),
             Container(
-              height: 350,
+              width: 350,
               color: Colors.deepPurple[400],
             )
           ]
