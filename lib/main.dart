@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
           title: Text("N U M B E R P A D", style: TextStyle(color: Colors.white),),
           centerTitle: true,
           backgroundColor: Colors.deepPurple,
+          elevation: 8,
+          shadowColor: Colors.black,
         ),
         body: Center(
           child: Container(
