@@ -21,7 +21,17 @@ class MyApp extends StatelessWidget {
           child: Container(
             width: 500,
             height: 400,
-            color: Colors.purple,
+            decoration: BoxDecoration(
+              color: Colors.deepPurple,
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black,
+                  blurRadius: 8,
+                  offset: Offset(0, 5)
+                )
+              ]
+            ),
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -33,6 +43,7 @@ class MyApp extends StatelessWidget {
                       height: 200,
                       decoration: BoxDecoration(
                         color: Colors.red,
+                          borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black,
@@ -68,6 +79,7 @@ class MyApp extends StatelessWidget {
                       width: 200,
                       height: 200,
                       decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
                           color: Colors.blue,
                           boxShadow: [
                             BoxShadow(
