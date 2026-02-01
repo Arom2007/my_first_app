@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("A R O M", style: TextStyle(color: Colors.white),),
+          title: Text("N U M B E R P A D", style: TextStyle(color: Colors.white),),
           centerTitle: true,
           backgroundColor: Colors.deepPurple,
         ),
         body: Center(
           child: Container(
-            color: Colors.white,
+            color: Colors.deepPurple[100],
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
