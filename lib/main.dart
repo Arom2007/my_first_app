@@ -35,43 +35,123 @@ class MyApp extends StatelessWidget {
           // ]
         ),
         body: Center(
-          child:
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(12),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      blurRadius: 12,
-                      offset: Offset(5, 5),
-                      spreadRadius: 5
-                    ),
-                    BoxShadow(
-                      color: Colors.white,
-                      blurRadius: 12,
-                      offset: Offset(-5, -5),
-                      spreadRadius: 5
-                    )
-                  ]
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  alignment: AlignmentDirectional.center,
+                  decoration: BoxDecoration(
+                    color: Colors.orange
+                  ),
+                  height: 200,
+                  width: 400,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.add),
+                            Text("Arom")
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.home),
+                            Text("Barom")
+                          ],
+                        ),
+                      )
+                    ],
+                  )
                 ),
-                height: 300,
-                width: 300,
-
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.add, color: Colors.red, size: 28,),
-                    Text(
-                      "Arom Barom",
-                      style: TextStyle(color: Colors.black, fontSize: 28),
-                    )
-                  ],
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  alignment: AlignmentDirectional.center,
+                  decoration: BoxDecoration(
+                    color: Colors.green
+                  ),
+                  height: 200,
+                  width: 400,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.book),
+                            Text("Barom")
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.punch_clock_outlined),
+                            Text("Arom")
+                          ],
+                        ),
+                      )
+                      
+                    ],
+                  ),
 
                 ),
-
-          )
+              )
+            ],
+          ),
         ),
+        // body: Center(
+        //   child:
+        //       Container(
+        //         decoration: BoxDecoration(
+        //           color: Colors.white,
+        //           borderRadius: BorderRadius.circular(12),
+        //           boxShadow: [
+        //             BoxShadow(
+        //               color: Colors.black,
+        //               blurRadius: 12,
+        //               offset: Offset(5, 5),
+        //               spreadRadius: 5
+        //             ),
+        //             BoxShadow(
+        //               color: Colors.white,
+        //               blurRadius: 12,
+        //               offset: Offset(-5, -5),
+        //               spreadRadius: 5
+        //             )
+        //           ]
+        //         ),
+        //         height: 300,
+        //         width: 300,
+        //
+        //         child: Row(
+        //           mainAxisAlignment: MainAxisAlignment.center,
+        //           children: [
+        //             Icon(Icons.add, color: Colors.red, size: 28,),
+        //             Text(
+        //               "Arom Barom",
+        //               style: TextStyle(color: Colors.black, fontSize: 28),
+        //             )
+        //           ],
+        //
+        //         ),
+        //
+        //   )
+        // ),
         // body: Center (
         //   child: Column(
         //     children: [
