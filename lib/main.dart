@@ -12,256 +12,140 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey[700],
         appBar: AppBar(
+          title: Text("A R O M"),
           centerTitle: true,
-          title: Text(
-              "Arom Barom App Bar",
-            style: TextStyle(color: Colors.white, ),
-
-          ),
-          backgroundColor: Colors.deepPurple,
-          elevation: 0,
-          // no shadow to app bar
-          // leading: Icon(Icons.menu, color: Colors.white),
-          // actions: [
-          //   IconButton(
-          //     onPressed: () {},
-          //     icon: Icon(
-          //         Icons.logout,
-          //         color: Colors.white
-          //     ),
-          //   ),
-          // ]
         ),
         body: Center(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  alignment: AlignmentDirectional.center,
-                  decoration: BoxDecoration(
-                    color: Colors.orange
+          child: Container(
+            color: Colors.black,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    color: Colors.red,
+                    height: 400,
+                    padding: EdgeInsets.all(12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            height: 100,
+                            color: Colors.green,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.add),
+                                    Text("A Ro M")
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.add_a_photo),
+                                    Text("AR OM")
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            color: Colors.blue,
+                            height: 100,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.add_alarm_sharp),
+                                    Text("B Ro M")
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.add_a_photo_outlined),
+                                    Text("BR OM")
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    )
                   ),
-                  height: 200,
-                  width: 400,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.add),
-                            Text("Arom")
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.home),
-                            Text("Barom")
-                          ],
-                        ),
+                  SizedBox(width: 12,),
+                  Container(
+                      color: Colors.red,
+                      height: 400,
+                      padding: EdgeInsets.all(12),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 100,
+                              color: Colors.green,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Icon(Icons.add),
+                                      Text("A Ro M")
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.add_a_photo),
+                                      Text("AR OM")
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              color: Colors.blue,
+                              height: 100,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Icon(Icons.add_alarm_sharp),
+                                      Text("B Ro M")
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.add_a_photo_outlined),
+                                      Text("BR OM")
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
                       )
-                    ],
-                  )
-                ),
+                  ),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  alignment: AlignmentDirectional.center,
-                  decoration: BoxDecoration(
-                    color: Colors.green
-                  ),
-                  height: 200,
-                  width: 400,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.book),
-                            Text("Barom")
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.punch_clock_outlined),
-                            Text("Arom")
-                          ],
-                        ),
-                      )
-                      
-                    ],
-                  ),
-
-                ),
-              )
-            ],
+            ),
           ),
         ),
-        // body: Center(
-        //   child:
-        //       Container(
-        //         decoration: BoxDecoration(
-        //           color: Colors.white,
-        //           borderRadius: BorderRadius.circular(12),
-        //           boxShadow: [
-        //             BoxShadow(
-        //               color: Colors.black,
-        //               blurRadius: 12,
-        //               offset: Offset(5, 5),
-        //               spreadRadius: 5
-        //             ),
-        //             BoxShadow(
-        //               color: Colors.white,
-        //               blurRadius: 12,
-        //               offset: Offset(-5, -5),
-        //               spreadRadius: 5
-        //             )
-        //           ]
-        //         ),
-        //         height: 300,
-        //         width: 300,
-        //
-        //         child: Row(
-        //           mainAxisAlignment: MainAxisAlignment.center,
-        //           children: [
-        //             Icon(Icons.add, color: Colors.red, size: 28,),
-        //             Text(
-        //               "Arom Barom",
-        //               style: TextStyle(color: Colors.black, fontSize: 28),
-        //             )
-        //           ],
-        //
-        //         ),
-        //
-        //   )
-        // ),
-        // body: Center (
-        //   child: Column(
-        //     children: [
-        //       Padding(
-        //         padding: const EdgeInsets.all(8.0),
-        //         child: Container(
-        //           height: 300,
-        //           color: Colors.deepPurple[500],
-        //           child: Center(
-        //             child: Text(
-        //               "AROM",
-        //               style: TextStyle(color: Colors.white),
-        //             ),
-        //           ),
-        //         ),
-        //       ),
-        //       Padding(
-        //         padding: const EdgeInsets.all(8.0),
-        //         child: Container(
-        //           height: 300,
-        //           color: Colors.green[400],
-        //           child: Center(
-        //             child: Text(
-        //                 "BAROM",
-        //                 style: TextStyle(color: Colors.red, fontSize: 28, fontWeight: FontWeight.bold),
-        //             ),
-        //           ),
-        //         ),
-        //       )
-        //     ],
-        //   )
-        // )
-        // body: SingleChildScrollView(
-        //   child: Column(
-        //     // A major problem with Column or Row is that sometimes the widgets don't fit into the screen and create overflow error in display
-        //     // To fix that, there is ListView which makes the widget fit into the screen by making it scrollable
-        //     // Scroll direction is set to vertical by default but you can change it
-        //     // scrollDirection: Axis.horizontal,
-        //
-        //     // Columns display things vertically
-        //       // mainAxisAlignment: MainAxisAlignment.center,
-        //       // mainAxisAlignment: MainAxisAlignment.end,
-        //       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        //       // mainAxisAlignment: MainAxisAlignment.spaceAround,
-        //       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        //       // crossAxisAlignment: CrossAxisAlignment.start,
-        //       // crossAxisAlignment: CrossAxisAlignment.end,
-        //       // crossAxisAlignment: CrossAxisAlignment.center,
-        //     children: [
-        //       // // 1st box
-        //       // Expanded(
-        //       //   child: Container(
-        //       //       color: Colors.deepPurple[600]
-        //       //   ),
-        //       // ),
-        //       //
-        //       // // 2nd box
-        //       // Expanded(
-        //       //   flex: 4, // Flex is the ratio of this widget compared the other widgets
-        //       //   // Here this widget will be 4x bigger than the rest of the widgets
-        //       //   child: Container(
-        //       //       color: Colors.deepPurple[400]
-        //       //   ),
-        //       // ),
-        //       //
-        //       // // 3rd box
-        //       // Expanded(
-        //       //   child: Container(
-        //       //     color: Colors.deepPurple[200]
-        //       //   ),
-        //       // )
-        //       Container(
-        //         height: 350,
-        //         color: Colors.deepPurple[800]
-        //       ),
-        //       Container(
-        //         height: 350,
-        //         color: Colors.deepPurple[600],
-        //       ),
-        //       Container(
-        //         height: 350,
-        //         color: Colors.deepPurple[400],
-        //       )
-        //     ]
-        //   ),
-        // )
-        // body: Center(
-        //   child: Container(
-        //     height: 300,
-        //     width: 300,
-        //     decoration: BoxDecoration(
-        //       color: Colors.deepPurple[500],
-        //       borderRadius: BorderRadius.circular(20),
-        //     ),
-        //     padding: EdgeInsets.all(25),
-        //     // child: Text(
-        //     //     "Arom Barom",
-        //     //   style:TextStyle(
-        //     //     color: Colors.white,
-        //     //     fontSize: 28,
-        //     //     fontWeight: FontWeight.bold
-        //     //   ),
-        //     // ),
-        //     child: Icon(
-        //       Icons.home,
-        //       color: Colors.white,
-        //       size: 40,
-        //     )
-        //   )
-        // )
       )
     ); // MaterialApp
   }
