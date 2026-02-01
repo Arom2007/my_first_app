@@ -19,99 +19,283 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            width: 500,
-            height: 400,
-            decoration: BoxDecoration(
-              color: Colors.deepPurple,
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black,
-                  blurRadius: 8,
-                  offset: Offset(0, 5)
-                )
-              ]
-            ),
-            child: Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Container(
-                      width: 200,
-                      height: 200,
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                          borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(5, 5),
-                            blurRadius: 8
-                          )
-                        ]
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.train, size: 30, color: Colors.white,),
-                              Text("Arom", style: TextStyle(fontSize: 30, color: Colors.white),)
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.airplanemode_active, size: 30, color: Colors.white,),
-                              Text("Barom", style: TextStyle(fontSize: 30, color: Colors.white),)
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Container(
-                      width: 200,
-                      height: 200,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.blue,
+            color: Colors.white,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(15),
                           boxShadow: [
                             BoxShadow(
-                                color: Colors.black,
-                                offset: Offset(-5, 5),
-                                blurRadius: 8
+                              color: Colors.black,
+                              blurRadius: 8,
+                              offset: Offset(0, 5)
                             )
                           ]
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.directions_car_filled_rounded, size: 30, color: Colors.white),
-                              Text("Carom", style: TextStyle(fontSize: 30, color: Colors.white),)
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.bike_scooter, size: 30, color: Colors.white,),
-                              Text("Darom", style: TextStyle(fontSize: 30, color: Colors.white),)
-                            ],
-                          )
-                        ],
+                        ),
+                        child: Center(child: Text("1", style: TextStyle(fontSize: 50),)),
                       ),
                     ),
-                  )
-                ],
-              ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("2", style: TextStyle(fontSize: 50),)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("3", style: TextStyle(fontSize: 50),)),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("4", style: TextStyle(fontSize: 50),)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("5", style: TextStyle(fontSize: 50),)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("6", style: TextStyle(fontSize: 50),)),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("7", style: TextStyle(fontSize: 50),)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("8", style: TextStyle(fontSize: 50),)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("9", style: TextStyle(fontSize: 50),)),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("*", style: TextStyle(fontSize: 50),)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("0", style: TextStyle(fontSize: 50),)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12,12, 0, 0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Text("#", style: TextStyle(fontSize: 50),)),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 24, 0, 0),
+                      child: Container(
+                        height: 75,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            color: Colors.green[500],
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 8,
+                                  offset: Offset(0, 5)
+                              )
+                            ]
+                        ),
+                        child: Center(child: Icon(Icons.call, color: Colors.white, size: 50,)),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
         )
