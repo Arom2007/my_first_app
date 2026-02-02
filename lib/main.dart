@@ -13,13 +13,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         // Using GridView.builder to make a grid of 64 container boxes with 8 containers in each row
-        body: GridView.builder(
-            itemCount: 64, // How many total items you want to be displayed in the GridView
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 8), // crossAxisCount is the total items per row
-            itemBuilder: (context, index) => Container(
-              color: Colors.deepPurple,
-              margin: EdgeInsets.all(2), // This is basically padding
-            )
+        body: Center(
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Container(height: 300, width: 300, color: Colors.deepPurple[500]),
+              Container(height: 200, width: 200, color: Colors.deepPurple[400]),
+              Container(height: 100, width: 100, color: Colors.deepPurple[300])
+            ],
+          ),
         )
         
       )
