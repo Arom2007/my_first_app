@@ -15,7 +15,7 @@ class FirstPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => SecondPage()));
+            Navigator.pushNamed(context, '/secondpage');
           },
           child: Container(
             height: 50,
