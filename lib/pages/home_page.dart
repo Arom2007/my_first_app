@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SecondPage extends StatelessWidget {
-  const SecondPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text("S E C O N D  P A G E", style: TextStyle(color: Colors.white),),
+        title: Text("H O M E", style: TextStyle(color: Colors.white),),
         centerTitle: true,
       ),
     );
