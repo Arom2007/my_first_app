@@ -12,12 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // Using ListView.builder to make a column of 10 numbers from 0 to 9
-        body: ListView.builder(
-          itemCount: 10,
-          itemBuilder: (context, index) => ListTile(
-            title: Text(index.toString()),
-          )
+        // Using GridView.builder to make a grid of 64 container boxes with 8 containers in each row
+        body: GridView.builder(
+            itemCount: 64, // How many total items you want to be displayed in the GridView
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 8), // crossAxisCount is the total items per row
+            itemBuilder: (context, index) => Container(
+              color: Colors.deepPurple,
+              margin: EdgeInsets.all(2), // This is basically padding
+            )
         )
         
       )
