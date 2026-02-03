@@ -36,7 +36,19 @@ class _TapCounterPageState extends State<TapCounterPage> {
             Text(_counter.toString(), style: TextStyle(fontSize: 40),),
 
             // Button
-            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],))
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add, size: 30, color: Colors.deepPurple[600],)),
+
           ],
         ),
       )
