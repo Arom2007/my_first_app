@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_first_app/pages/home_page.dart';
 import 'package:my_first_app/pages/profile_page.dart';
 import 'package:my_first_app/pages/settings_page.dart';
+import 'package:my_first_app/pages/tap_counter_page.dart';
 
 // List of pages
 final List _pages = [
@@ -10,6 +11,8 @@ final List _pages = [
   ProfilePage(),
 
   SettingsPage(),
+  
+  TapCounterPage(),
 ];
 
 
@@ -47,10 +50,15 @@ class _FirstPageState extends State<FirstPage> {
       ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.red,
+        fixedColor: Colors.deepPurple[500],
+        unselectedItemColor: Colors.grey[600],
         currentIndex: _selectedIndex,
 
           // If anything is tapped in the bottom, it will update _selectedIndex accordingly
           onTap: _navigateBottomBar,
+
+
           items: [
             //home
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home",),
@@ -59,7 +67,10 @@ class _FirstPageState extends State<FirstPage> {
             BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
 
             // settings
-            BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings")
+            BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
+            
+            // tap counter
+            BottomNavigationBarItem(icon: Icon(Icons.add), label: "Tap Counter")
           ]
 
       ),

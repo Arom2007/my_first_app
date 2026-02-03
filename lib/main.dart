@@ -4,6 +4,7 @@ import 'package:my_first_app/pages/first_page.dart';
 import 'package:my_first_app/pages/home_page.dart';
 import 'package:my_first_app/pages/profile_page.dart';
 import 'package:my_first_app/pages/settings_page.dart';
+import 'package:my_first_app/pages/tap_counter_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         '/firstpage' : (context) => FirstPage(),
         '/homepage' : (context) => HomePage(),
         '/settingspage' : (context) => SettingsPage(),
-        '/profilepage' : (context) => ProfilePage()
+        '/profilepage' : (context) => ProfilePage(),
+        '/tapcounterpage' : (context) => TapCounterPage(),
       }
     ); // MaterialApp
   }
