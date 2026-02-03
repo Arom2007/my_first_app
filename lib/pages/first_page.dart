@@ -47,6 +47,8 @@ class _FirstPageState extends State<FirstPage> {
       ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+          onTap: _navigateBottomBar,
           items: [
             //home
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home",),
