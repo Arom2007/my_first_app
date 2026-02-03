@@ -17,11 +17,14 @@ final List _pages = [
 int _selectedIndex = 0;
 
 
-class FirstPage extends StatelessWidget {
+class FirstPage extends StatefulWidget {
   const FirstPage({super.key});
 
+  @override
+  State<FirstPage> createState() => _FirstPageState();
+}
 
-
+class _FirstPageState extends State<FirstPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +33,7 @@ class FirstPage extends StatelessWidget {
         title: Text("F I R S T  P A G E", style: TextStyle(color: Colors.white),),
         centerTitle: true,
       ),
-      body: _pages[1],
+      body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
           items: [
             //home
