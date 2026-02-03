@@ -6,7 +6,6 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
         title: Text("S E T T I N G S", style: TextStyle(color: Colors.white),),
