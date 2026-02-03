@@ -17,6 +17,8 @@ final List _pages = [
 int _selectedIndex = 0;
 
 
+
+
 class FirstPage extends StatefulWidget {
   const FirstPage({super.key});
 
@@ -25,6 +27,16 @@ class FirstPage extends StatefulWidget {
 }
 
 class _FirstPageState extends State<FirstPage> {
+
+
+  // Method to update the new selected index
+  void _navigateBottomBar(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
