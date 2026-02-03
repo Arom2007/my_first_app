@@ -48,6 +48,8 @@ class _FirstPageState extends State<FirstPage> {
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
+
+          // If anything is tapped in the bottom, it will update _selectedIndex accordingly
           onTap: _navigateBottomBar,
           items: [
             //home
