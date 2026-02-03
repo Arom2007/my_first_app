@@ -34,6 +34,7 @@ class _FirstPageState extends State<FirstPage> {
 
   // Method to update the new selected index
   void _navigateBottomBar(int index) {
+    // Any time we change the value of something and we want the change to be reflected in the app we need to use setState which requires the stateful widget
     setState(() {
       _selectedIndex = index;
     });
@@ -45,7 +46,7 @@ class _FirstPageState extends State<FirstPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text("F I R S T  P A G E", style: TextStyle(color: Colors.white),),
+        title: Text("A R O M  B A R O M", style: TextStyle(color: Colors.white),),
         centerTitle: true,
       ),
       body: _pages[_selectedIndex],

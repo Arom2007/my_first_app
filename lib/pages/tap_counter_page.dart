@@ -8,6 +8,15 @@ class TapCounterPage extends StatefulWidget {
 }
 
 class _TapCounterPageState extends State<TapCounterPage> {
+
+  // Variable
+  int _counter = 0;
+
+  // Method
+  void _incrementCounter() {
+    _counter++; // Any time we change the value of something and we want the change to be reflected in the app we need to use setState which requires the stateful widget
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
