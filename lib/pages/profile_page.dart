@@ -21,7 +21,7 @@ class _ProfilePageState extends State<ProfilePage> {
   void greetUser() {
     String userName = myController.text;
     setState(() {
-      greetingMessage = "Hello ${userName}";
+      greetingMessage = "Hello $userName";
     });
   }
 
@@ -42,7 +42,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.only(top: 20.0),
                 child: ElevatedButton(onPressed: greetUser, child: Icon(Icons.check)),
               ),
               Padding(
